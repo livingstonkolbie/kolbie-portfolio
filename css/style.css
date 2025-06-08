@@ -49,19 +49,19 @@ body {
 }
 
 [data-bs-theme="dark"] {
-  --bs-body-bg: #000; /* Set the main background to black */
-  --bs-body-color: #fff; /* Set the main text color to white */
-  /* You may need to override other specific variables as needed */
+  --bs-body-bg: hsl(240, 10%, 4%); /* Set the main background to a very very dark shade of blue... so cool */
+  --bs-body-color: hsl(0, 0%, 100%, 1);
 }
 
-/* Header Row */
-.heading {
-    padding-left: 11%;
+main {
+    padding-left: 6%;
     padding-top: 5rem;
-    padding-right: 11%;
+    padding-right: 6%;
     max-width: 768px; /* Stops growing at tablet size */
     margin: 0 auto;   /* Centers the container */
 }
+
+/* Header Row */
 
 .heading h1 {
     font-size: 1.2rem;
@@ -84,6 +84,18 @@ body {
 
 }
 
+.paraTitle {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.paraSupport {
+    color: grey;
+    font-weight: 500;
+    font-size: 0.95rem;
+
+}
+
 @media (min-width: 425px) {
     .heading img {
 
@@ -92,8 +104,16 @@ body {
 }
 
 @media (max-width: 425px) {
-    .heading {
-        padding-left: 7%;
-        padding-right: 7%;
+
+    .heading-words {
+        padding-left: 5.4%;
+    }
+
+    .main {
+    padding-left: 0%;
+    padding-top: 0rem;
+    padding-right: 0%;
+    max-width: 768px; /* Stops growing at tablet size */
+    margin: 0 auto;   /* Centers the container */
     }
 }
