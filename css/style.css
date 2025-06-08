@@ -48,48 +48,52 @@ body {
     display: none;
 }
 
+[data-bs-theme="dark"] {
+  --bs-body-bg: #000; /* Set the main background to black */
+  --bs-body-color: #fff; /* Set the main text color to white */
+  /* You may need to override other specific variables as needed */
+}
+
 /* Header Row */
 .heading {
-    padding-left: 5%;
-    padding-top: 10%;
-    padding-right: 5%;
+    padding-left: 11%;
+    padding-top: 5rem;
+    padding-right: 11%;
+    max-width: 768px; /* Stops growing at tablet size */
+    margin: 0 auto;   /* Centers the container */
 }
 
 .heading h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin: 0;
+    letter-spacing: 0.4px;
+    line-height: 32px;
 }
 
 .heading p {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
+    margin: 0;
+    color: grey;
+    font-weight: 500;
+    line-height: 16px;
 }
 
 .heading img {
-    width: 100%;
+    width: 70px;
     border-radius: 50%;
-    float: right;
+
 }
 
-.pixel-kolbie-col {
-    /* padding-right: 0; */
-    /* padding-left: 6%; */
-}
-
-
-/* Media Queries */
-
-@media (min-width: 768px) {
-    /* Header Row */
-    .heading {
-    padding-left: 15%;
-    padding-top: 10%;
-    padding-right: 15%;
-}
-
-    .heading h1 {
-        font-size: 1.35rem;
-    }
-
+@media (min-width: 425px) {
     .heading img {
-        width: 78px;
+
+        float: right;
+    }
+}
+
+@media (max-width: 425px) {
+    .heading {
+        padding-left: 7%;
+        padding-right: 7%;
     }
 }
