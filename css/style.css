@@ -23,10 +23,12 @@ body {
 
 .fa-moon {
     color: #f1c40f;
+    cursor: pointer;
 }
 
 .fa-sun {
     color: #f39c12;
+    cursor: pointer;
 }
 
 .checkbox-label .ball {
@@ -38,6 +40,7 @@ body {
     top: 2px;
     border-radius: 50%;
     transition: transform 0.2 linear;
+    cursor: pointer;
 }
 
 .checkbox:checked + .checkbox-label .ball {
@@ -102,6 +105,7 @@ main {
     width: 81%;
     border: solid 1px darkgrey;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .meme-simon-img:hover {
@@ -112,10 +116,24 @@ main {
     width: 100%;
     border: solid 1px darkgrey;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .kl-portfolio-img:hover {
     transform: scale(1.02);
+}
+
+.project-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: grey;
+}
+
+.more-link {
+    color: grey;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 /* TECH STACK */
